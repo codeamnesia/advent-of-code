@@ -1,0 +1,30 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "Advent of Code puzzles resolution repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soficious/advent-of-code.git"
+  },
+  "keywords": [
+    "advent",
+    "of",
+    "code"
+  ],
+  "author": "Soficious",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Soficious/advent-of-code/issues"
+  },
+  "homepage": "https://github.com/Soficious/advent-of-code#readme",
+  "engines": {
+    "node": "14.15.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
