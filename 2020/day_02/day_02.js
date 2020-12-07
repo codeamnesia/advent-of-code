@@ -1,16 +1,9 @@
-const fs = require("fs");
-const path = require("path");
-
-function getInput() {
-  const fileRead = fs.readFileSync(path.join(__dirname, "input.txt"), "utf-8");
-  const input = fileRead.split(/\r?\n/).map((pass) => pass.split(/[\s:-]+/));
-
-  return input;
-}
+const { getInputFromFile } = require("../utils");
 
 function notReallyWhatIAmHappyAboutSolution() {
-  const passwords = getInput();
-
+  const passwords = getInputFromFile("input.txt", "day_02").map((pass) =>
+    pass.split(/[\s:-]+/)
+  );
   let totalValidCount = 0;
 
   passwords.forEach((password) => {
@@ -55,8 +48,9 @@ function getValidPasswordsCount(passwordsArray) {
 }
 
 function passwordPoliciesPartTwo() {
-  const passwords = getInput();
-
+  const passwords = getInputFromFile("input.txt", "day_02").map((pass) =>
+    pass.split(/[\s:-]+/)
+  );
   let totalValidCount = 0;
 
   passwords.forEach((password) => {
